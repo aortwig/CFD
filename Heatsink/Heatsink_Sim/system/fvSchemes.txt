@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  com                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+ddtSchemes
+{
+    // Temporal schemes
+    default         Euler;
+}
+ 
+gradSchemes
+{
+    // Gradient schemes
+    default         Gauss linear;
+    grad(p)         Gauss linear;
+}
+ 
+divSchemes
+{
+    // Divergence/convection schemes
+    default         none;
+    div(phi,U)      Gauss linear;
+}
+ 
+laplacianSchemes
+{
+    // Laplacian schemes
+    default         Gauss linear orthogonal;
+}
+ 
+interpolationSchemes
+{
+    // Interpolation schemes
+    default         linear;
+}
+ 
+snGradSchemes
+{
+    // Surface-normal gradient schemes
+    default         orthogonal;
+}
+ 
+wallDist
+{
+    // Wall distance calculation method
+}
+ 
+// ************************************************************************* //

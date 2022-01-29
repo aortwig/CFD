@@ -1,0 +1,58 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  com                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+solvers
+{
+    // Solver information for each solution variable
+}
+ 
+potentialFlow
+{
+    // Potential flow algorithm controls
+}
+ 
+SIMPLE
+{
+    // SIMPLE pressure-velocity algorithm controls
+}
+ 
+PISO
+{
+    // PISO pressure-velocity algorithm controls
+}
+ 
+PIMPLE
+{
+    // PIMPLE pressure-velocity algorithm controls
+}
+ 
+relaxationFactors
+{
+    // Relaxation factors per field and equation
+ 
+    field
+    {
+        ...
+    }
+    equation
+    {
+        ...
+    }
+}
+ 
+ 
+// ************************************************************************* //
